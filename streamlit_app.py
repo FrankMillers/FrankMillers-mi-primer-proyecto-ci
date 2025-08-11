@@ -225,7 +225,7 @@ def pagina_comparacion_modelos():
         st.dataframe(resultados, hide_index=True, use_container_width=True)
         st.success("🏆 **Mejor Modelo:** MobileNetV2 (94.7% accuracy)")
 
-def pagina_validacion_estadistica():
+def pagina_validacion_estadistica_old():
     """Página de validación estadística"""
     st.markdown("""
     # 📈 Validación Estadística de Modelos
@@ -350,3 +350,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def pagina_validacion_estadistica_old():
+    """Página de validación estadística real"""
+    from src.modelos.validacion_estadistica_real import mostrar_validacion_estadistica_real
+    mostrar_validacion_estadistica_real()
+
+def pagina_validacion_estadistica():
+    """Página de validación estadística real"""
+    from src.modelos.validacion_estadistica_real import mostrar_validacion_estadistica_real
+    mostrar_validacion_estadistica_real()
