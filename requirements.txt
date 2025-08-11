@@ -1,9 +1,6 @@
 streamlit
-tensorflow-cpu==2.15.0
 plotly
 pandas
-numpy<2.0.0
+numpy
 scikit-learn
 Pillow
-opencv-python-headless
-scipy
