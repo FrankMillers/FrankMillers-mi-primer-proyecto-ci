@@ -13,8 +13,8 @@ if st.sidebar.button('📊 Ver Análisis EDA'):
 
 # Navegación a Comparación de Modelos
 if st.sidebar.button('🧠 Comparar Modelos'):
-    from src.modelos.comparador_modelos import mostrar_interfaz_comparacion
-    mostrar_interfaz_comparacion()
+    from src.modelos.comparador_modelos_con_progreso import mostrar_interfaz_con_progreso
+    mostrar_interfaz_con_progreso()
 
 # Navegación a Validación Estadística
 if st.sidebar.button('📈 Validación Estadística'):
